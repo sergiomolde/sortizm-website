@@ -6,7 +6,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #5f59f7;
+  background-color: #c2185b;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -34,4 +34,13 @@
 
 .mat-icon {
     height: 20px;
+}
+
+.example-spacer {
+  text-align: right;
+}
+
+mat-toolbar button.navButton {
+  font-size: 1rem;
+  margin: 0 1rem;
 }
