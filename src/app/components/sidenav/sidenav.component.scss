@@ -37,10 +37,14 @@
 }
 
 .example-spacer {
-  text-align: right;
+  flex: 1 1 auto;
 }
 
 mat-toolbar button.navButton {
   font-size: 1rem;
   margin: 0 1rem;
+}
+
+.buttonsToolbar button{
+  font-size: 20px;
 }

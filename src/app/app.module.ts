@@ -7,7 +7,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
-
+import { ReactiveFormsModule } from '@angular/forms';  
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -34,7 +34,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
     MatCardModule,
     MatProgressBarModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
