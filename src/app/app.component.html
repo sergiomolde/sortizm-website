@@ -1,5 +1,6 @@
-<app-sidenav></app-sidenav>
-<div class="mainContainer">
+<app-maintenance></app-maintenance>
+<app-sidenav *ngIf="!maintenance"></app-sidenav>
+<div class="mainContainer" *ngIf="!maintenance">
     <div class="container">
         <router-outlet></router-outlet>
     </div>
