@@ -1,0 +1,49 @@
+<div class="container">
+  <h2 class="text-center mb-5">Angular Contact Form Hosted On FireBase</h2>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <form [formGroup]="form" ><!-- (ngSubmit)="onSubmit(FormData.value)" -->
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            name="Email"
+            aria-describedby="emailHelp"
+            placeholder="Introduce your email"
+            formControlName="Email"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input
+            type="text"
+            class="form-control"
+            name="Fullname"
+            placeholder="Introduce your full name."
+            formControlName="nombrecompleto"
+          />
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment</label>
+          <textarea
+            class="form-control"
+            formControlName="Comment"
+            name="Comment"
+          >
+          </textarea>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary"
+          [disabled]="!form.valid"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
