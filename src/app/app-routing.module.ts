@@ -7,7 +7,7 @@ import { ValorankComponent } from './components/valorank/valorank.component';
 const routes: Routes = [
   {path: 'index', component: IndexComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'valorank', component: ValorankComponent},
+  {path: 'valorankweb', component: ValorankComponent},
   {path: '', redirectTo: 'index', pathMatch: 'full'},
   {path: '**', component: IndexComponent}
 ];
