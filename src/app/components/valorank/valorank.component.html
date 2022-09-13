@@ -1,0 +1,57 @@
+<div class="apiContainer">
+    <header>Request Valorant Rank Data</header>
+    <div id="apiMainContainer">
+        <div class="d-flex flex-column formContent" [formGroup]="form">
+            <div class="requestApi">
+                <p> GET /:language/:region/:riotname/:riotid</p>
+            </div>
+            <div class="w-100 mt-3">
+                <label for="languages" class="mx-3">Language </label>
+                <select name="languages" id="languages" formControlName="language">
+                    <option value="">English</option>
+                    <option value="/es">Spanish</option>
+                </select>
+            </div>
+            <div class="w-100 mt-3">
+                <label for="regions" class="mx-3">Region </label>
+                <select name="regions" id="regions" formControlName="region">
+                    <option value="/eu">Europe</option>
+                    <option value="/na">North America</option>
+                    <option value="/ap">LATAM</option>
+                    <option value="/kr">Korea</option>
+                </select>
+            </div>
+            <div class="w-100 mt-3">
+                <label for="riotname" class="mx-3">Riot name</label>
+                <input type="text" name="riotname" id="riotname" formControlName="riotname">
+            </div>
+            <div class="w-100 mt-3">
+                <label for="riotname" class="mx-3">RiotId</label>
+                <input type="text" name="riotname" id="riotname" formControlName="riotid">
+            </div>
+            <div class="w-100 containerJSON">
+                <div *ngIf="example">
+                    <p class="mt-4">Output example</p>
+                    <div class="jsonData">
+                        <pre>
+                            {{exampledata}}
+                        </pre>
+                    </div>
+                </div>
+                <div *ngIf="example">
+                    <p class="mt-4">Output results</p>
+                    <div class="jsonData">
+                        <p *ngIf="!trueData">No results yet.</p>
+                        <pre *ngIf="trueData">
+                            Request: {{requestmade}}
+                            {{trueData}}
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 mt-3 text-right">
+                <button mat-raised-button color="success" type="submit" (click)="recieveData()">Send data</button>
+            </div>
+        </div>
+    </div>
+</div>

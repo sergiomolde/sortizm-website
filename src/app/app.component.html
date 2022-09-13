@@ -1,4 +1,4 @@
-<app-maintenance></app-maintenance>
+<app-maintenance *ngIf="maintenance"></app-maintenance>
 <app-sidenav *ngIf="!maintenance"></app-sidenav>
 <div class="mainContainer" *ngIf="!maintenance">
     <div class="container">

@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sortizm-website';
-  maintenance = true;
+  maintenance = false;
 }

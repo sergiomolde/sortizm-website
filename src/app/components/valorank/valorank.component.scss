@@ -1,0 +1,39 @@
+.formContent > div > label {
+    width: 70px;
+}
+
+.requestApi {
+    border-radius: 10px;
+    background-color: #666;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.requestApi p {
+    margin: 0.5rem;
+}
+
+.apiContainer {
+    header {
+        padding: 0.3rem;
+        border-radius: 10px 10px 0px 0px;
+        color: white;
+        background-color: #c2185b;
+    }
+    #apiMainContainer {
+        padding: 0.3rem;
+        border: 2px solid #c2185b;
+    }
+}
+
+.jsonData {
+    border-radius: 10px;
+    background-color: #666;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.jsonData pre, .jsonData p{
+    padding: 1rem;
+    white-space: pre-line;
+}

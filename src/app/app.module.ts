@@ -18,6 +18,8 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { MaintenanceComponent } from './components/maintenance/maintenance.component';
+import { ValorankComponent } from './components/valorank/valorank.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { MaintenanceComponent } from './components/maintenance/maintenance.compo
     SidenavComponent,
     ProjectsComponent,
     ContactComponent,
-    MaintenanceComponent
+    MaintenanceComponent,
+    ValorankComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { MaintenanceComponent } from './components/maintenance/maintenance.compo
     MatProgressBarModule,
     MatButtonModule,
     MatToolbarModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
