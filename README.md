@@ -1,27 +1,17 @@
 # SortizmWebsite
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+Project website in Angular, made to upload personal and public projects.
+This web is up in `http://sortizm-dev.es/`.
 
-## Development server
+## How to run it
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Clone the repository
+- Type `npm i` on the console, wait until it finish of installing all the libraries/dependencies.
+- Then, type `ng serve` for a dev server. Navigate to `http://localhost:4200` in your favourite website. If you make any change the application will reload automatically, so dont get worried to stop the service and start it again.
 
-## Code scaffolding
+## Routes
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- `/` will automatically redirect you to `/index`.
+- `/*` anything that is not in app.routing-module.ts will automatically redirect you to `/index`.
+- `/contact` page of the contact form.
+- `/valorankweb` page for `/valorank` api request.
