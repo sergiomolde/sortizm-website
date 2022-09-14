@@ -6,6 +6,12 @@
                 <pre> GET /:language/:region/:riotname/:riotid</pre>
             </div>
             <div class="w-100 mt-3">
+                <label for="botnames" class="mx-3">Bot </label>
+                <select name="botnames" id="botnames" formControlName="botname" *ngFor="let bot of botsCommand">
+                    <option [value]="bot.name">{{bot.name}}</option>
+                </select>
+            </div>
+            <div class="w-100 mt-3">
                 <label for="languages" class="mx-3">Language </label>
                 <select name="languages" id="languages" formControlName="language">
                     <option value="">English</option>
@@ -44,7 +50,15 @@
                         <pre *ngIf="!trueData">No results yet.</pre>
                         <pre *ngIf="trueData">
                             Request: {{requestmade}}
+                        </pre>
+                        <pre *ngIf="trueData">
                             {{trueData}}
+                        </pre>
+                    </div>
+                    <p *ngIf="trueData && botSelected">Additional information</p>
+                    <div class="jsonData">
+                        <pre *ngIf="trueData && botSelected">
+                            {{botSelected}}
                         </pre>
                     </div>
                 </div>

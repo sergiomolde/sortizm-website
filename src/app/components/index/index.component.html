@@ -1,17 +1,47 @@
-<mat-card class="example-card">
-  <mat-card-title class="color-primary">
-    Valorank (Spanish Version)
-  </mat-card-title>
-  <mat-card-subtitle class="text-muted">
-    Up since 09/2022
-  </mat-card-subtitle>
-  <mat-card-content class="text-secondary">
-    Project made in NodeJS, to retrieve data from Trackers to be displayed as JSON data. You can also retrieve the information in Spanish.
-  </mat-card-content>
-  <mat-card-footer class="cardFooter">
-    <div class="text-right buttonsFooterCard">
-      <button mat-raised-button color="primary"><a href="/valorankweb">Go to Valorank</a></button>
-    </div>
-    <mat-progress-bar mode="determinate" value="100" color="red"></mat-progress-bar>
-  </mat-card-footer>
-</mat-card>
+<div class="row">
+  <mat-card class="example-card">
+    <mat-card-title class="color-primary d-flex justify-content-between">
+      Valorank
+      <img src="../../../assets/example.png" alt="Example picture" width="50" class="text-right">
+    </mat-card-title>
+    <mat-card-subtitle>
+      Status: <p class="upsince">Up since 09/2022</p>
+    </mat-card-subtitle>
+    <mat-card-content class="text-secondary">
+      Project made in NodeJS, to retrieve data from Trackers to be displayed as JSON data. You can also retrieve the information in Spanish.
+    </mat-card-content>
+    <mat-card-footer class="cardFooter">
+      <div class="buttonsFooterCard d-flex justify-content-between">
+        <div class="githubButton">
+          <a href="https://github.com/sergiomolde/valorank-spanish-version"><img src="../../../assets/github.png" alt="Github logo"></a>
+        </div>
+        <div>
+          <a href="/valorankweb"><button mat-raised-button color="primary">Go to Valorank</button></a>
+        </div>
+      </div>
+    </mat-card-footer>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-title class="color-primary d-flex justify-content-between">
+      Rocket Stats
+      <img src="../../../assets/rocketstats.jpg" alt="Rocket Stats logo" width="50" class="text-right">
+    </mat-card-title>
+    <mat-card-subtitle>
+      Status: <p class="inprogress">Coming soon...</p>
+    </mat-card-subtitle>
+    <mat-card-content class="text-secondary">
+      API made in NodeJS to retrieve Rocket League stats from Tracker Network. You can also get the result into a Spanish translated version.
+    </mat-card-content>
+    <mat-card-footer class="cardFooter">
+      <div class="buttonsFooterCard d-flex justify-content-between">
+        <div class="githubButton">
+          <a href="https://github.com/sergiomolde/rocket-stats"><img src="../../../assets/github.png" alt="Github logo"></a>
+        </div>
+        <div>
+          <button mat-raised-button color="primary" disabled>Go to Rocket Stats</button>
+        </div>
+      </div>
+    </mat-card-footer>
+  </mat-card>
+</div>
