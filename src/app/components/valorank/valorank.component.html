@@ -3,7 +3,7 @@
     <div id="apiMainContainer">
         <div class="d-flex flex-column formContent" [formGroup]="form">
             <div class="requestApi">
-                <p> GET /:language/:region/:riotname/:riotid</p>
+                <pre> GET /:language/:region/:riotname/:riotid</pre>
             </div>
             <div class="w-100 mt-3">
                 <label for="languages" class="mx-3">Language </label>
@@ -41,7 +41,7 @@
                 <div *ngIf="example">
                     <p class="mt-4">Output results</p>
                     <div class="jsonData">
-                        <p *ngIf="!trueData">No results yet.</p>
+                        <pre *ngIf="!trueData">No results yet.</pre>
                         <pre *ngIf="trueData">
                             Request: {{requestmade}}
                             {{trueData}}
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="w-100 mt-3 text-right">
-                <button mat-raised-button color="success" type="submit" (click)="recieveData()">Send data</button>
+                <button mat-raised-button color="primary" type="submit" (click)="recieveData()">Send data</button>
             </div>
         </div>
     </div>
